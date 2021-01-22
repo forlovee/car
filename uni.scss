@@ -1,0 +1,56 @@
+/**
+ * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
+ * 使用的时候，请将下面的一行复制到您的uniapp项目根目录的uni.scss中即可
+ * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
+ */
+@import 'uview-ui/theme.scss';
+
+page {
+	--blue:#3875F6;
+	--f7:#f7f7f7;
+	background: #f7f7f7;
+	font-size: 28rpx;
+}
+div{
+	box-sizing: border-box;
+};
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.ellip {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+input {
+	font-size: 28rpx;
+}
+
+// iconfont
+@font-face {
+  font-family: 'iconfont';  /* project id 2314422 */
+  src: url('//at.alicdn.com/t/font_2314422_p2lz33la5p.eot');
+  src: url('//at.alicdn.com/t/font_2314422_p2lz33la5p.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_2314422_p2lz33la5p.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_2314422_p2lz33la5p.woff') format('woff'),
+  url('//at.alicdn.com/t/font_2314422_p2lz33la5p.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_2314422_p2lz33la5p.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sousuo:before {
+  content: "\e669";
+}
+.icon-weibiaoti34:before {
+  content: "\e634";
+}
+
